@@ -1,0 +1,222 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family:
+        'Segoe UI',
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+
+    background-color: #f5f5f5;
+
+    color: #222;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    background: linear-gradient(
+        135deg,
+        #2e7d32,
+        #1b5e20
+    );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 45px 20px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0 0 15px;
+
+    font-size: 38px;
+}
+
+header p {
+    margin: 0;
+
+    font-size: 19px;
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+main {
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 50px auto;
+
+    text-align: center;
+}
+
+main h2 {
+    font-size: 30px;
+
+    color: #333;
+
+    margin-bottom: 40px;
+}
+
+
+/* =========================
+   CARDS DAS ODS
+========================= */
+
+.ods-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Cada card */
+
+.ods-card {
+
+    width: 300px;
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    text-decoration: none;
+
+    color: #222;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+
+/* Imagem */
+
+.ods-card img {
+
+    width: 100%;
+
+    max-width: 260px;
+
+    height: auto;
+
+    border-radius: 10px;
+}
+
+
+/* Título */
+
+.ods-card h3 {
+
+    font-size: 25px;
+
+    margin: 15px 0 5px;
+
+    color: #2e7d32;
+}
+
+
+/* Descrição */
+
+.ods-card p {
+
+    font-size: 17px;
+
+    margin: 5px 0;
+}
+
+
+/* =========================
+   EFEITO AO PASSAR O MOUSE
+========================= */
+
+.ods-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+
+    background-color: #1b5e20;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 17px;
+    }
+
+    main h2 {
+        font-size: 26px;
+    }
+
+    .ods-card {
+        width: 90%;
+
+        max-width: 350px;
+    }
+
+}
